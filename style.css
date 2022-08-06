@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    color: #0f141e;
+    background: #f1f1f1;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.myphoto {
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    width: 35%;
+    margin-top: 25px;
+}
+
+.block-info {
+    display: inline-block;
+    width: 50%;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    position: relative;
+    bottom: 5px;
+}
+
+@media (max-width: 700px) {
+    .myphoto {
+        display: block;
+        width: 40%;
+        position: relative;
+        left: 33%;
+    }
+
+    .block-info {
+        display: block;
+        margin: 10px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.main-info {
+    cursor: default;
+}
+
+.main-info h1 {
+    margin-bottom: 15px;
+}
+
+.main-info p {
+    color: #909497;
+    font-weight: 600;
+}
+
+.main-info {
+    margin-bottom: 15px;
+}
+
+.links {
+    margin: 15px 0 15px 0;
+}
+
+.links p {
+    margin-bottom: 5px;
+    cursor: default;
+}
+
+.btn {
+    color: #627dc3;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+.btn:hover {
+    color: #5867ca;
+}
+
+.card {
+    background: #e0e9e9;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    cursor: default;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card li {
+    font-weight: bold;
+    color: #404347;
+}
+
+.card ol {
+    padding-left: 3%;
+}
+
+.card ol li {
+    padding-bottom: 8px;
+}
+
+.card-1 {
+    background: #e5989b;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.card-1 h2 {
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+.card-1 table th {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.card-1 table td {
+    padding-right: 15px;
+}
+
+.table {
+    cursor: default;
+    width: 100%;
+}
+
+.table tbody td {
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.table thead td {
+    padding-bottom: 5px;
+}
+
+.table tbody td:nth-child(2),
+.table tbody td:nth-child(3) {
+    color: #404347;
+}
+
+.contact {
+    background: #c2c7ff;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.form .form-group {
+    display: inline-block;
+    width: 45%;
+}
+
+
+@media (max-width: 700px) {
+    .form .form-group {
+        display: block;
+        margin: 0;
+        box-sizing: border-box;
+        width: 96%;
+        margin-bottom: 20px;
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-email {
+    margin-left: 40px;
+}
+
+/* .form-group:nth-child(odd) {
+    margin-left: 40px;
+} */
+
+.form-group label {
+    margin-bottom: 10px;
+}
+
+.form h2 {
+    text-align: center;
+    cursor: default;
+    margin-bottom: 20px;
+}
+
+.form label {
+    display: block;
+}
+
+.form input {
+    padding: 10px;
+}
+
+.form input,
+textarea {
+    font-family: inherit;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.textarea label {
+    margin-bottom: 10px;
+
+}
+
+.form textarea {
+    resize: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contact button {
+    padding: 15px;
+    background: #4775cd;
+    color: #ddd;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.contact button:hover {
+    transition: all 0.3s;
+    color: black;
+    opacity: 0.9;
+}

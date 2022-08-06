@@ -7,79 +7,95 @@
     <meta name="keywords" content="cv, сайт, сайт визитка, сайт-визитка, резюме, блог, личный блог">
     <meta name="description" content="Это мой сайт-визитка для будущего работодателя">
     <title>Никита Ендураев</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>  
-    <img src="photo_1.jpg" alt="Мое фото" width="250">
-    <h1>Никита Ендураев</h1>
-    <p>Пока что я работаю в онлайн-ритейле. Хочу выучиться на <strong>фронтенд-разработчика</strong> и зарабатывать этим себе на хлеб.</p>
-    <p>Люблю в свободное время играть в <em>компьютерные игры, кататься на велосипеде и сноуборде.</em></p>
-    <p><strong>Список социальных сетей:</strong></p>
-    <a href="https://vk.com" target="_blank">VK</a> 
-    | 
-    <a href="https://telegram.org" target="_blank">Telegram</a> 
-    | 
-    <a href="https://instagram.com" target="_blank">Instagram</a>
-    <h2><strong>Мои Хобби</strong></h2>
-    <ol>
-        <li>Велоспорт</li>
-        <li>Сноуборд</li>
-        <li>Бег</li>
-        <li>Компьютерные игры</li>
-    </ol>
-    <h2>Опыт Работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    Дом
-                </td>
-                <td>
-                    Безработный
-                </td>
-                <td>
-                    2018-2019
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    ООО "ДНС-РИТЕЙЛ"
-                </td>
-                <td>
-                    Управляющий магазином"
-                </td>
-                <td>
-                    2019-2022
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите свое имя">
+<body>
+    <div class="container">  
+        <img src="photo_1.jpg" alt="Мое фото" class="myphoto">
+        <!-- Блок с общей информацией -->
+        <div class="block-info">
+            <div class="main-info">
+                <h1>Никита Ендураев</h1>
+                <p>Пока что я работаю в онлайн-ритейле.<br>Учусь на <strong>фронтенд-разработчика</strong> и намереваюсь найти в этой области работу.</p>
+                <p>Люблю играть в <em>компьютерные игры, кататься на велосипеде и сноуборде.</em></p>
+            </div>
+            <!-- Блок со ссылками -->
+            <div class="links">
+                <p><strong>Список социальных сетей:</strong></p>
+                <a href="https://vk.com" target="_blank" class="btn">VK</a> 
+                | 
+                <a href="https://telegram.org" target="_blank" class="btn">Telegram</a> 
+                | 
+                <a href="https://instagram.com" target="_blank" class="btn">Instagram</a>
+            </div>
+        </div>    
+        <!-- Блок Хобби -->
+        <div class="card">
+            <h2><strong>Мои Хобби</strong></h2>
+            <ol>
+                <li>Велоспорт</li>
+                <li>Сноуборд</li>
+                <li>Бег</li>
+                <li>Компьютерные игры</li>
+            </ol>
         </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите свой email">
+        <!-- Блок с информацией о работе -->
+        <div class="card-1">
+            <h2>Опыт Работы</h2>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>
+                            Дом
+                        </td>
+                        <td>
+                            Безработный
+                        </td>
+                        <td>
+                            2018-2019
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ООО "ДНС-РИТЕЙЛ"
+                        </td>
+                        <td>
+                            Управляющий магазином"
+                        </td>
+                        <td>
+                            2019-2022
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea name="message" id="" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+        <!-- Блок для связи -->
+        <div class="contact">
+            <form action="#" class="form">
+                <h2>Связаться со мной</h2>
+                <div class="form-group">
+                    <label for="f-name">Ваше имя:</label>
+                    <input type="text" placeholder="Введите имя..." id="f-name">
+                </div>
+                <div class="form-group form-email">
+                    <label for="f-email">Ваш email:</label>
+                    <input type="email" placeholder="Введите email..." id="f-email">
+                </div>
+                <div class="textarea">
+                    <label for="f-text">Ваше сообщение:</label>
+                    <textarea cols="30" rows="5" id="f-text" placeholder="Введите ваше сообщение..."></textarea>
+                </div>
+                    <!-- <input type="submit" placeholder="Отправить" class="form-btn"> -->
+                <button>Отправить</button>
+            </form>
         </div>
-        <div>
-            <button>Отправить!</button>
-        </div>
-    </form>
-       
+    </div>    
 </body>
 </html>
